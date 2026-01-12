@@ -1,0 +1,21 @@
+SAMRION TEMPLATE — QUICK SETUP
+
+STEP 1:
+Create a folder on your PC:
+samrion-gym-template/
+
+STEP 2:
+Put these files inside:
+- index.html
+- style.css
+- script.js
+
+STEP 3:
+Run website:
+- Double click index.html
+OR
+- Open the folder in VS Code and use Live Server
+
+STEP 4:
+Deploy online (free):
+- Netlify: drag and drop folder
