@@ -1,0 +1,63 @@
+SAMRION — TEMPLATE LICENSE AGREEMENT
+-----------------------------------
+Product: Samrion Website Template
+Type: Digital Download (HTML/CSS/JS)
+
+Copyright (c) 2026 Samrion.
+All rights reserved.
+
+By purchasing or downloading this template, you agree to the license terms below.
+
+==================================================
+1) PERMITTED USE (YOU ARE ALLOWED TO)
+==================================================
+You are allowed to:
+- Use this template for personal projects
+- Use this template for commercial/client projects
+- Modify/customize the template (text, colors, sections, layout)
+- Deploy the website on any hosting (Netlify, Vercel, GitHub Pages, etc.)
+
+Commercial use is allowed for building websites for your own business or your clients.
+
+==================================================
+2) PROHIBITED USE (YOU ARE NOT ALLOWED TO)
+==================================================
+You are NOT allowed to:
+- Resell this template as a digital product
+- Redistribute or re-upload this template (or modified versions)
+- Share this template publicly (free or paid)
+- Upload it to marketplaces, groups, Telegram channels, or websites
+- Claim this template as your own original product
+
+This includes reselling the template on:
+Gumroad, Payhip, Etsy, ThemeForest, GitHub, Telegram groups, etc.
+
+==================================================
+3) NO REFUNDS POLICY
+==================================================
+Because this is a digital product, refunds are not provided after download.
+Please review the product description and demo before purchasing.
+
+==================================================
+4) SUPPORT & CUSTOMIZATION
+==================================================
+This template is provided "as-is".
+For customization, branding, or full website setup, you can contact Samrion.
+
+==================================================
+5) LIABILITY DISCLAIMER
+==================================================
+Samrion is not responsible for:
+- Any business loss or damages from using this template
+- Hosting, domain, or third-party service issues
+- Incorrect edits made by the customer
+
+==================================================
+6) OWNERSHIP
+==================================================
+Samrion retains full ownership and copyright of the template code/design.
+Purchasing this product grants you a license to use it under these terms.
+
+-----------------------------------
+Samrion — Premium Business Templates
+-----------------------------------
