@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samrion A Fitness | Build Your Best Body</title>
+    <title>Samrion Fitness | Build Your Best Body</title>
     <meta name="description" content="Premium fitness training, gym, and transformation center. Join Samrion Fitness today.">
     
     <!-- Google Fonts -->
@@ -11,13 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS (Relative Path) -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fallback if JS fails/is disabled -->
+    <noscript>
+        <style>
+            .reveal { opacity: 1 !important; transform: translateY(0) !important; }
+            .whatsapp-float { display: flex; }
+        </style>
+    </noscript>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="container nav-container">
             <a href="#home" class="logo">Samrion<span>Fitness</span></a>
             
@@ -32,9 +40,7 @@
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#trainers">Trainers</a></li>
-                <li><a href="#transformations">Transformations</a></li>
-                <li><a href="#testimonials">Stories</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#transformations">Results</a></li>
                 <li><a href="#contact" class="btn-nav">Join Now</a></li>
             </ul>
         </div>
@@ -45,24 +51,24 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content reveal">
             <h1>Build Your <span class="text-primary">Best Body</span><br>With Samrion Fitness</h1>
-            <p>Transform your physique with expert coaching, disciplined nutrition, and a premium training environment. Your journey starts here.</p>
+            <p>Transform your physique with expert coaching, disciplined nutrition, and a premium training environment.</p>
             <div class="hero-btns">
-                <a href="#pricing" class="btn btn-primary">Join Now</a>
-                <a href="https://wa.me/910000000000?text=Hi%20Samrion%20Fitness%2C%20I%20want%20to%20join%20the%20gym." class="btn btn-outline">Chat on WhatsApp</a>
+                <a href="#pricing" class="btn btn-primary">Start Today</a>
+                <a href="https://wa.me/910000000000?text=Hi%20Samrion%20Fitness%2C%20I%20want%20to%20join%20the%20gym." class="btn btn-outline" target="_blank">WhatsApp Us</a>
             </div>
             
             <div class="stats-row">
                 <div class="stat-item">
                     <h3 data-target="1500">0</h3>
-                    <span>Happy Members</span>
+                    <span>Members</span>
                 </div>
                 <div class="stat-item">
                     <h3 data-target="12">0</h3>
-                    <span>Years Experience</span>
+                    <span>Years</span>
                 </div>
                 <div class="stat-item">
                     <h3 data-target="25">0</h3>
-                    <span>Expert Trainers</span>
+                    <span>Trainers</span>
                 </div>
             </div>
         </div>
@@ -78,23 +84,20 @@
             <div class="grid-3">
                 <div class="card feature-card reveal">
                     <div class="icon-box">
-                        <!-- Dumbbell SVG -->
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5V19H4V5H6M20 5V19H18V5H20M9 5V19H7V5H9M17 5V19H15V5H17M12 2C13.1 2 14 2.9 14 4V20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20V4C10 2.9 10.9 2 12 2Z"/></svg>
                     </div>
                     <h3>Strength Training</h3>
                     <p>State-of-the-art equipment designed to maximize hypertrophy and strength gains safely.</p>
                 </div>
-                <div class="card feature-card reveal" style="transition-delay: 0.2s;">
+                <div class="card feature-card reveal">
                     <div class="icon-box">
-                        <!-- Fire SVG -->
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5.67C12.96 1.76 12.5 3.1 12.35 4.5C12.22 5.76 12.63 7.03 13.31 8.08C13.88 9 14.65 9.77 15.35 10.66C16.89 12.58 17.5 15.08 16.92 17.5C16.46 19.38 15.14 21.05 13.33 21.92C11.53 22.8 9.38 22.78 7.6 21.9C5.39 20.81 3.97 18.5 3.97 16C3.97 15.82 4 15.65 4.04 15.47C4.1 15.17 4.3 14.92 4.58 14.8C4.86 14.68 5.18 14.71 5.43 14.89C6.46 15.61 7.74 15.89 8.96 15.58C9.5 15.44 10 15.2 10.45 14.89C10.5 14.85 10.54 14.81 10.58 14.77C12.18 13.17 12.5 10.61 11.23 8.78C11 8.44 10.74 8.13 10.45 7.84C9.69 7.08 8.78 6.47 7.9 5.82C6.39 4.69 5 3.4 3.97 1.83C3.81 1.58 3.86 1.25 4.09 1.06C4.33 .86 4.67 .86 4.92 1.05C6 1.9 7.15 2.66 8.35 3.33C8.42 3.37 8.5 3.4 8.57 3.42C8.61 3.32 8.66 3.22 8.73 3.13C9.66 1.76 11.4 1 13 1C13.18 1 13.37 1.03 13.54 1.09C13.79 1.18 13.9 1.48 13.78 1.72C13.7 1.87 13.6 2.04 13.5 .67Z"/></svg>
                     </div>
                     <h3>Fat Loss</h3>
                     <p>Scientifically backed high-intensity interval training to burn fat and boost metabolism.</p>
                 </div>
-                <div class="card feature-card reveal" style="transition-delay: 0.4s;">
+                <div class="card feature-card reveal">
                     <div class="icon-box">
-                        <!-- User/Person SVG -->
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
                     </div>
                     <h3>Personal Coaching</h3>
@@ -109,46 +112,45 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2>Our <span class="text-primary">Programs</span></h2>
-                <p>Designed for every fitness level and goal.</p>
             </div>
             <div class="grid-3">
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #E0435A, #0B0F1A);"></div>
+                    <div class="program-img gradient-1"></div>
                     <div class="program-content">
                         <h4>Weight Training</h4>
                         <p>Build muscle mass and raw power.</p>
                     </div>
                 </div>
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #151A26, #444);"></div>
+                    <div class="program-img gradient-2"></div>
                     <div class="program-content">
                         <h4>HIIT Cardio</h4>
                         <p>Endurance and rapid fat burning.</p>
                     </div>
                 </div>
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #E0435A, #666);"></div>
+                    <div class="program-img gradient-3"></div>
                     <div class="program-content">
                         <h4>Yoga & Flex</h4>
                         <p>Improve mobility and mental focus.</p>
                     </div>
                 </div>
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #333, #000);"></div>
+                    <div class="program-img gradient-2"></div>
                     <div class="program-content">
                         <h4>CrossFit</h4>
                         <p>Functional movements at high intensity.</p>
                     </div>
                 </div>
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #E0435A, #222);"></div>
+                    <div class="program-img gradient-1"></div>
                     <div class="program-content">
                         <h4>Personal Training</h4>
                         <p>Dedicated attention for faster results.</p>
                     </div>
                 </div>
                 <div class="card program-card reveal">
-                    <div class="program-img" style="background: linear-gradient(45deg, #555, #E0435A);"></div>
+                    <div class="program-img gradient-3"></div>
                     <div class="program-content">
                         <h4>Nutrition Plan</h4>
                         <p>Diet plans customized to your body type.</p>
@@ -163,7 +165,6 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2>Membership <span class="text-primary">Plans</span></h2>
-                <p>Transparent pricing. No hidden fees.</p>
             </div>
             <div class="grid-3 pricing-grid">
                 <!-- Basic -->
@@ -173,11 +174,9 @@
                     <ul>
                         <li><span class="check">✓</span> Gym Access</li>
                         <li><span class="check">✓</span> Locker Room</li>
-                        <li><span class="check">✓</span> Free Wifi</li>
                         <li class="disabled"><span>✕</span> Personal Trainer</li>
-                        <li class="disabled"><span>✕</span> Diet Plan</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline full-width">Choose Basic</a>
+                    <a href="#contact" class="btn btn-outline full-width">Select Basic</a>
                 </div>
 
                 <!-- Pro -->
@@ -186,13 +185,11 @@
                     <h3>Pro</h3>
                     <div class="price">$59<span>/mo</span></div>
                     <ul>
-                        <li><span class="check">✓</span> All Basic Features</li>
+                        <li><span class="check">✓</span> Gym Access</li>
                         <li><span class="check">✓</span> Group Classes</li>
                         <li><span class="check">✓</span> 1 Personal Session/mo</li>
-                        <li><span class="check">✓</span> Smart Workout App</li>
-                        <li class="disabled"><span>✕</span> Diet Plan</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary full-width">Choose Pro</a>
+                    <a href="#contact" class="btn btn-primary full-width">Select Pro</a>
                 </div>
 
                 <!-- Elite -->
@@ -201,12 +198,10 @@
                     <div class="price">$99<span>/mo</span></div>
                     <ul>
                         <li><span class="check">✓</span> All Pro Features</li>
-                        <li><span class="check">✓</span> Unlimited Personal Training</li>
-                        <li><span class="check">✓</span> Weekly Diet Plan</li>
+                        <li><span class="check">✓</span> Unlimited PT</li>
                         <li><span class="check">✓</span> Spa & Sauna Access</li>
-                        <li><span class="check">✓</span> Merchandise Kit</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline full-width">Choose Elite</a>
+                    <a href="#contact" class="btn btn-outline full-width">Select Elite</a>
                 </div>
             </div>
         </div>
@@ -220,21 +215,21 @@
             </div>
             <div class="grid-3">
                 <div class="card trainer-card reveal">
-                    <div class="trainer-img" style="background: #333;"></div>
+                    <div class="trainer-img bg-gray"></div>
                     <div class="trainer-info">
                         <h3>Mark Steele</h3>
                         <span>Strength Coach</span>
                     </div>
                 </div>
                 <div class="card trainer-card reveal">
-                    <div class="trainer-img" style="background: #444;"></div>
+                    <div class="trainer-img bg-gray"></div>
                     <div class="trainer-info">
                         <h3>Sarah Fit</h3>
                         <span>HIIT Specialist</span>
                     </div>
                 </div>
                 <div class="card trainer-card reveal">
-                    <div class="trainer-img" style="background: #333;"></div>
+                    <div class="trainer-img bg-gray"></div>
                     <div class="trainer-info">
                         <h3>John Doe</h3>
                         <span>Yoga & Mobility</span>
@@ -295,38 +290,17 @@
             <div class="testimonial-slider reveal">
                 <div class="slider-container">
                     <div class="slider-track" id="track">
-                        <!-- Slide 1 -->
                         <div class="slide">
                             <p>"Joining Samrion Fitness was the best decision of my life. The trainers are supportive and the vibe is unmatched."</p>
-                            <div class="user">
-                                <div class="avatar"></div>
-                                <div>
-                                    <h5>Jessica M.</h5>
-                                    <span>Member since 2023</span>
-                                </div>
-                            </div>
+                            <div class="user"><h5>Jessica M.</h5></div>
                         </div>
-                        <!-- Slide 2 -->
                         <div class="slide">
                             <p>"Top notch equipment and very clean facilities. I love the 24/7 access on the Pro plan."</p>
-                            <div class="user">
-                                <div class="avatar"></div>
-                                <div>
-                                    <h5>David K.</h5>
-                                    <span>Member since 2022</span>
-                                </div>
-                            </div>
+                            <div class="user"><h5>David K.</h5></div>
                         </div>
-                        <!-- Slide 3 -->
                         <div class="slide">
                             <p>"I never thought I'd enjoy working out until I started the group classes here. Highly recommended!"</p>
-                            <div class="user">
-                                <div class="avatar"></div>
-                                <div>
-                                    <h5>Emily R.</h5>
-                                    <span>Member since 2024</span>
-                                </div>
-                            </div>
+                            <div class="user"><h5>Emily R.</h5></div>
                         </div>
                     </div>
                 </div>
@@ -343,32 +317,20 @@
     <section class="section" id="faq">
         <div class="container">
             <div class="section-header reveal">
-                <h2>Frequently <span class="text-primary">Asked</span></h2>
+                <h2>FAQ</h2>
             </div>
             <div class="accordion reveal">
                 <div class="accordion-item">
-                    <button class="accordion-header">What are your opening hours? <span class="icon">+</span></button>
-                    <div class="accordion-body">
-                        <p>We are open from 5:00 AM to 11:00 PM, Monday through Sunday. Pro and Elite members get 24/7 access.</p>
-                    </div>
+                    <button class="accordion-header">Opening Hours? <span class="icon">+</span></button>
+                    <div class="accordion-body"><p>5:00 AM to 11:00 PM Daily.</p></div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">Do you offer a free trial? <span class="icon">+</span></button>
-                    <div class="accordion-body">
-                        <p>Yes! We offer a 3-day free pass for local residents. Contact us to book yours.</p>
-                    </div>
+                    <button class="accordion-header">Free Trial? <span class="icon">+</span></button>
+                    <div class="accordion-body"><p>Yes, 3-day pass available.</p></div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">Can I freeze my membership? <span class="icon">+</span></button>
-                    <div class="accordion-body">
-                        <p>Yes, you can freeze your membership for up to 3 months for medical or travel reasons.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">Is personal training included? <span class="icon">+</span></button>
-                    <div class="accordion-body">
-                        <p>Basic plans do not include PT. Pro includes 1 session/month, and Elite includes unlimited PT.</p>
-                    </div>
+                    <button class="accordion-header">Personal Training? <span class="icon">+</span></button>
+                    <div class="accordion-body"><p>Available in Pro and Elite plans.</p></div>
                 </div>
             </div>
         </div>
@@ -380,8 +342,7 @@
             <div class="grid-2 reveal">
                 <div class="contact-form-wrapper">
                     <h3>Get In Touch</h3>
-                    <p>Ready to start? Fill out the form below.</p>
-                    <form class="contact-form">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" placeholder="John Doe" required>
@@ -395,7 +356,6 @@
                             <select>
                                 <option>Weight Loss</option>
                                 <option>Muscle Gain</option>
-                                <option>General Fitness</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary full-width">Send Message</button>
@@ -403,14 +363,10 @@
                 </div>
                 <div class="contact-info">
                     <h3>Contact Info</h3>
-                    <p><strong>Address:</strong> 123 Fitness Street, Gym City, India</p>
-                    <p><strong>Phone:</strong> <a href="tel:+910000000000">+91 000 000 0000</a></p>
-                    <p><strong>Email:</strong> info@samrionfitness.com</p>
-                    
-                    <!-- Map Placeholder -->
-                    <div class="map-placeholder">
-                        <span>Google Map Placeholder</span>
-                    </div>
+                    <p>123 Fitness Street, Gym City</p>
+                    <p>+91 000 000 0000</p>
+                    <p>info@samrionfitness.com</p>
+                    <div class="map-placeholder">Google Map Here</div>
                 </div>
             </div>
         </div>
@@ -422,48 +378,34 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="#" class="logo">Samrion<span>Fitness</span></a>
-                    <p>Premium fitness solutions for everyone.</p>
+                    <p>Premium fitness solutions.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#programs">Programs</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
-                        <a href="#">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.15 5.96C15.21 5.96 16.12 6.04 16.12 6.04V8.51H15.01C13.77 8.51 13.38 9.28 13.38 10.07V12.06H16.15L15.71 14.96H13.38V21.96C18.16 21.21 21.82 17.06 21.82 12.06C21.82 6.53 17.32 2.04 12 2.04Z"/></svg>
-                        </a>
-                        <a href="#">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2M7.6 4C5.6 4 4 5.6 4 7.6V16.4C4 18.4 5.6 20 7.6 20H16.4C18.4 20 20 18.4 20 16.4V7.6C20 5.6 18.4 4 16.4 4H7.6M17.25 5.5A1.25 1.25 0 0 1 18.5 6.75A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75A1.25 1.25 0 0 1 17.25 5.5M12 7A5 5 0 0 1 17 12A5 5 0 0 1 12 17A5 5 0 0 1 7 12A5 5 0 0 1 12 7M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9Z"/></svg>
-                        </a>
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                &copy; 2026 Samrion Fitness. All rights reserved.
-            </div>
+            <div class="copyright">&copy; 2026 Samrion Fitness.</div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/910000000000?text=Hi%20Samrion%20Fitness%2C%20I%20want%20to%20join%20the%20gym." class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/910000000000?text=I%20want%20to%20join." class="whatsapp-float" target="_blank">
         <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
     </a>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- Scripts (Relative Path) -->
+    <script src="./script.js" defer></script>
 </body>
 </html>
