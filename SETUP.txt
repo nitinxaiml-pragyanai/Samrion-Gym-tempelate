@@ -1,21 +1,104 @@
-SAMRION TEMPLATE — QUICK SETUP
+SAMRION — SETUP GUIDE
+Template: Gym / Fitness Website
 
-STEP 1:
-Create a folder on your PC:
+IMPORTANT DISCLAIMER
+--------------------------------------------------
+This website is a TEMPLATE (demo design).
+After downloading, you MUST edit the content to match your gym:
+- Gym Name
+- Phone / WhatsApp number
+- Address
+- Pricing
+- Trainers
+- Programs
+- Images (optional)
+
+The demo content shown is only for preview purposes.
+
+--------------------------------------------------
+STEP 1) CREATE PROJECT FOLDER
+--------------------------------------------------
+Create a folder on your computer:
 samrion-gym-template/
 
-STEP 2:
 Put these files inside:
 - index.html
 - style.css
 - script.js
 
-STEP 3:
-Run website:
-- Double click index.html
-OR
-- Open the folder in VS Code and use Live Server
+--------------------------------------------------
+STEP 2) RUN THE WEBSITE
+--------------------------------------------------
+Option A (Simple):
+- Double click index.html and open in browser
 
-STEP 4:
-Deploy online (free):
-- Netlify: drag and drop folder
+Option B (Recommended):
+- Open folder in VS Code
+- Install "Live Server"
+- Right click index.html → Open with Live Server
+
+--------------------------------------------------
+STEP 3) CHANGE YOUR GYM NAME (MOST IMPORTANT)
+--------------------------------------------------
+Open: index.html
+
+Use Ctrl + F (Find) and replace:
+"Samrion Fitness"
+
+Change it to your gym name, example:
+"IRONWOLF GYM"
+
+Where to change:
+- Navbar logo
+- Page sections headings
+- Footer
+
+Also update the page title at the top:
+<title>Samrion Fitness | Build Your Best Body</title>
+
+--------------------------------------------------
+STEP 4) UPDATE PHONE + WHATSAPP NUMBER
+--------------------------------------------------
+In index.html replace:
+tel:+910000000000
+
+And replace WhatsApp link:
+https://wa.me/910000000000?text=Hi%20Samrion%20Fitness%2C%20I%20want%20to%20join%20the%20gym.
+
+Add your number in this format:
+91XXXXXXXXXX
+
+Example:
+https://wa.me/919876543210?text=Hi%20I%20want%20to%20join%20the%20gym.
+
+--------------------------------------------------
+STEP 5) UPDATE ADDRESS + CONTACT
+--------------------------------------------------
+In index.html update:
+- Address line
+- Email line
+- Map section (optional placeholder)
+
+--------------------------------------------------
+STEP 6) CHANGE COLORS (OPTIONAL)
+--------------------------------------------------
+Open: style.css
+
+At the top inside :root change:
+--primary: #E0435A;
+
+You can replace with your gym brand color.
+
+--------------------------------------------------
+STEP 7) DEPLOY WEBSITE ONLINE (FREE)
+--------------------------------------------------
+NETLIFY (Recommended):
+1) Go to https://netlify.com
+2) Drag & drop your website folder
+3) You will get a live website link instantly
+
+--------------------------------------------------
+Need customization?
+--------------------------------------------------
+If you want a fully customized website with your logo, images and branding,
+contact Samrion (seller).
