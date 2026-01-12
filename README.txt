@@ -1,4 +1,4 @@
-SAMRION — PREMIUM BUSINESS TEMPLATE
+**SAMRION — PREMIUM BUSINESS TEMPLATE**
 Template Name: Samrion Fitness (Gym Website)
 
 Thank you for purchasing this website template.
@@ -12,7 +12,7 @@ Files included:
 - script.js
 - README.txt
 - SETUP.txt
-
+- LICENSE.txt
 This template is built using:
 - HTML
 - CSS
